@@ -1,0 +1,21 @@
+<div>
+    <div>
+        <!-- <mat-form-field appearance="legacy">
+            <mat-label>
+                message
+            </mat-label>
+
+            <input ngModel matInput placeholder="message">
+
+        </mat-form-field> -->
+        <button mat-button (click)="sendMessage()">send message</button>
+    </div>
+    <div>
+        <h1> my messsages </h1>
+        <ul>
+            <li *ngFor="let message of socket.messages">
+                {{message}}
+            </li>
+        </ul>
+    </div>
+</div>

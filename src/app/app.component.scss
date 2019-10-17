@@ -1,0 +1,20 @@
+mat-toolbar {
+    height: 8vh;
+}
+
+mat-drawer-container {
+    min-height: 92vh;
+}
+mat-drawer {
+    width: 20vw;
+}
+
+mat-drawer ul {
+    list-style: none
+}
+
+div.center {
+    display: flex;
+    justify-content: center
+}
+
