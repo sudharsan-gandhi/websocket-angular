@@ -2,6 +2,11 @@ import { Injectable } from '@angular/core';
 import { WebSocketSubject } from "rxjs/webSocket";
 
 
+/*
+    next() - will trigger a send event to server
+    subscribe() - will be emitted on receiving a message from server
+*/
+
 @Injectable({
   providedIn: 'root'
 })
@@ -20,7 +25,7 @@ export class WebsocketService {
       );
   }
   // this.messages.push(message)
-
+  
   sendMessage(text) {
     this.subject$.next({message: text});
   }
